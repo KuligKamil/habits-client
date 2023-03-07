@@ -4,7 +4,7 @@ import TopMenu from '@/components/TopMenu.vue'
 
 <template>
   <div>
-    <TopMenu title="Where in the world" mode="dark" />
+    <TopMenu title="Habits" mode="dark" />
     <RouterView />
   </div>
 </template>

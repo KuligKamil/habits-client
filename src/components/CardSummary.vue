@@ -1,9 +1,9 @@
 <script setup lang="ts">
 defineProps<{
-  alpha3Code: string
-  img: string
+  alpha3Code?: string
+  img?: string
   title: string
-  details: Map<string, string | undefined>
+  details?: Map<string, string | undefined>
 }>()
 
 const emit = defineEmits<(event: 'click:card') => void>()
