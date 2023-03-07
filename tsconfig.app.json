@@ -1,0 +1,17 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.json", "data.json","api/**/*.ts","tests/**/*.ts", "*.ts"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "ESNext"],
+    "composite": true,
+    "baseUrl": ".",
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "plugins": ["@volar/vue-language-plugin-pug"]
+  }
+}
